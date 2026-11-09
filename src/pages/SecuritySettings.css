@@ -1,0 +1,204 @@
+
+.security-page {
+  min-height: 70vh;
+  padding: 45px 20px 70px;
+  background: #f5f7fa;
+}
+
+.security-container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.security-header {
+  margin-bottom: 28px;
+}
+
+.security-eyebrow {
+  color: #008c95;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.security-header h1 {
+  margin: 8px 0;
+  color: #202a35;
+}
+
+.security-header > p:last-child {
+  color: #66717e;
+}
+
+.security-panel {
+  margin-bottom: 22px;
+  padding: 26px;
+  border: 1px solid #e1e6ed;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.035);
+}
+
+.security-panel h2 {
+  margin-top: 0;
+  color: #263342;
+}
+
+.security-panel > p,
+.security-session-heading p {
+  color: #687482;
+  line-height: 1.5;
+}
+
+.security-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 22px 0;
+  font-weight: 600;
+}
+
+.security-panel label {
+  display: block;
+  margin-bottom: 8px;
+  color: #344253;
+  font-weight: 600;
+}
+
+.security-panel select,
+.security-custom-time input {
+  width: 100%;
+  max-width: 420px;
+  padding: 11px;
+  border: 1px solid #cbd3dd;
+  border-radius: 6px;
+  background: white;
+}
+
+.security-custom-time {
+  margin-top: 18px;
+}
+
+.security-custom-row {
+  display: flex;
+  gap: 10px;
+  max-width: 420px;
+}
+
+.security-custom-row button,
+.security-session-heading button {
+  padding: 10px 16px;
+  border: 1px solid #3978ee;
+  border-radius: 6px;
+  background: white;
+  color: #3978ee;
+  cursor: pointer;
+}
+
+.security-hint {
+  margin: 14px 0;
+  font-size: 13px;
+}
+
+.security-primary-button,
+.security-danger-button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.security-primary-button {
+  background: #3978ee;
+}
+
+.security-danger-button {
+  margin-top: 20px;
+  background: #c0392b;
+}
+
+.security-session-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.security-session-list {
+  margin-top: 20px;
+}
+
+.security-session {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 18px 0;
+  border-top: 1px solid #e8edf2;
+}
+
+.security-session p {
+  margin: 7px 0;
+  overflow-wrap: anywhere;
+  color: #5e6977;
+  font-size: 13px;
+}
+
+.security-session small {
+  display: block;
+  margin-top: 5px;
+  color: #77818e;
+}
+
+.security-current-label {
+  color: #16834a;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.security-revoke-button {
+  padding: 8px 13px;
+  border: 1px solid #c0392b;
+  border-radius: 5px;
+  background: white;
+  color: #c0392b;
+  cursor: pointer;
+}
+
+.security-success {
+  color: #16834a;
+}
+
+.security-error {
+  color: #c0392b;
+}
+
+.security-panel button:disabled,
+.security-custom-time input:disabled,
+.security-panel select:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .security-panel {
+    padding: 18px;
+  }
+
+  .security-session,
+  .security-session-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .security-custom-row {
+    flex-direction: column;
+  }
+
+  .security-custom-row button {
+    width: fit-content;
+  }
+}
